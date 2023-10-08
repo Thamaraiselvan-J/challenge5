@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h5>Hi,I'm John</h5>
+        <h1>Building digital products,brands and experience.</h1>
+        <p>a Product Designer and Visual Developer in SF.I specialize in UI/UX Design,Responsive Web Design and Visual Development <div class="d-flex align-items-center">
+            <div class="spinner-border text-primary spinner-border-sm"
+                role="status">
+                <span class="visually-hidden"></span>
+            </div>
+        </div></p>
+        <button id="modeToggle">CONNECT WITH ME</button>
+    </div>
+
+    <script>
+        const modeToggle = document.getElementById("modeToggle");
+        const body = document.body;
+
+        modeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
